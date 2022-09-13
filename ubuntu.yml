@@ -4,39 +4,39 @@
   become: true
 
   tasks:
-#  - name: add ansible user
-#    user:
-#      name: mrwolf
-#      system: yes
+  - name: add ansible user
+    user:
+      name: mrwolf
+      system: yes
 
-#  - name: set up sudo for ansible user
-#    copy:
-#      src: files/sudoer_mrwolf
-#      dest: /etc/sudoers.d/mrwolf
-#      owner: root
-#      group: root
-#      mode: 0440
+  - name: set up sudo for ansible user
+    copy:
+      src: files/sudoer_mrwolf
+      dest: /etc/sudoers.d/mrwolf
+      owner: root
+      group: root
+      mode: 0440
 
-#  - name: add ansible-pull cron job
-#    cron:
-#      name: ansible auto-provision
-#      user: mrwolf
-#      minute: "*/10"
-#      job: ansible-pull -o -U https://github.com/alagodich/ansible.git
+  - name: add ansible-pull cron job
+    cron:
+      name: ansible auto-provision
+      user: mrwolf
+      minute: "*/10"
+      job: ansible-pull -o -U https://github.com/alagodich/ansible.git
 
   - name: install essentials
     package:
       name:
         - htop
         - vim
-#        - tmux
+        - tmux
 
-#  - name: bashrc
-#    copy:
-#      src: files/bashrc
-#      dest: /home/alagodich/.bashrc
-#      owner: alagodich
-#      group: alagodich
+  - name: bashrc
+    copy:
+      src: files/bashrc
+      dest: /home/alagodich/.bashrc
+      owner: alagodich
+      group: alagodich
 #  - name: copy file
     #copy:
     # src: local/path/in/this/repo
