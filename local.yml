@@ -2,10 +2,6 @@
 - hosts: localhost
   connection: local
   become: true
-  pre_tasks:
-    - name: update brew
-      tags: always
-      when: ansible_distribution == 'MacOSX'
 
   tasks:
 #  - name: add ansible user
