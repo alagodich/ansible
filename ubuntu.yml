@@ -39,16 +39,13 @@
       dest: /home/alagodich/.bashrc
       owner: alagodich
       group: alagodich
-#  - name: copy file
-    #copy:
-    # src: local/path/in/this/repo
-    # dest: /path/test.txt
-    # owner: root
-    # group: root
 
-          #- name: dconf
-          #dconf:
-          #key: "some/key"
-          #value: "some/value"
+  - name: activate zsh
+    shell: chsh -s $(which zsh)
 
-      
+    #- name: dconf
+    #dconf:
+    #key: "some/key"
+    #value: "some/value"
+
+
