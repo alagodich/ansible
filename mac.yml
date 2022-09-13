@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: check os
+      shell: uname
+      ignore_errors: true
