@@ -13,7 +13,7 @@
   - name: set up sudo for ansible user
     copy:
       src: files/sudoer_mrwolf
-      dest: /etc/sudoer.d/mrwolf
+      dest: /etc/sudoers.d/mrwolf
       owner: root
       group: root
       mode: 0440
