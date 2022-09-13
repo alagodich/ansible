@@ -42,7 +42,7 @@
 
   - name: activate zsh
     shell: chsh -s $(which zsh)
-    become: no
+    become: false
     #- name: dconf
     #dconf:
     #key: "some/key"
