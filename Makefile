@@ -1,7 +1,12 @@
-.PHONY: up
+.PHONY: up-mac
+## Apply mac playbook
+up-mac:
+	@sudo ansible-pull -U https://github.com/alagodich/ansible.git mac.yaml
+
+.PHONY: up-ubuntu
 ## Apply playbook
-up:
-	@sudo ansible-pull -U https://github.com/alagodich/ansible.git
+up-ubuntu:
+	@sudo ansible-pull -U https://github.com/alagodich/ansible.git ubuntu.yaml
 
 
 .PHONY: dump-dconf
