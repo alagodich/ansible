@@ -3,13 +3,24 @@ export ZSH="/Users/alagodich/.oh-my-zsh"
 
 # It expects a file $ZSH_CUSTOM/themes/headline/headline.zsh-theme
 # And probably will look in $ZSH by the same path after
-ZSH_THEME="headline"
+# ZSH_THEME="headline"
+
+# Installation https://typewritten.dev/#/installation?id=oh-my-zsh
+# Steps with oh-my-zsh:
+# Git clone somewhere, then from root:
+# cp typewritten.zsh files/zsh_custom/themes/typewritten.zsh-theme
+# cp async.zsh files/zsh_custom/themes/async
+ZSH_THEME="typewritten"
+
+# To try others
+# ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# Use echo $RANDOM_THEME to get current theme
+# ZSH_THEME_RANDOM_CANDIDATES=( "headline" "af-magic" "arrow" "bureau" "candy" "crcandy" "dstufft" "frontcube" "jtriley" "nicoulaj" "passion" "typewritten")
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
