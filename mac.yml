@@ -3,6 +3,10 @@
   connection: local
 
   tasks:
-    - name: check os
-      shell: uname
-      ignore_errors: true
+    - name: myzsh config
+      copy:
+        src: files/my.zsh
+        dest: /Users/alagodich/.oh-my-zsh/custom/my.test
+        owner: alagodich
+        group: staff
+        mode: 0644
