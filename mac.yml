@@ -37,7 +37,7 @@
 
     - name: vim config
       copy:
-        src: files/vim
+        src: files/vim/
         dest: /Users/alagodich/.vim/
         owner: alagodich
         group: staff
