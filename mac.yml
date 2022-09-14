@@ -6,7 +6,7 @@
     - name: myzsh config
       copy:
         src: files/my.zsh
-        dest: /Users/alagodich/.oh-my-zsh/custom/my.test
+        dest: /Users/alagodich/.oh-my-zsh/custom/my.zsh
         owner: alagodich
         group: staff
         mode: 0644
