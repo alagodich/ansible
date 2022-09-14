@@ -19,6 +19,7 @@ export AWS_PROFILE=AdministratorAccess-382429600368
 export GOPATH=/Users/alagodich/go
 export PATH="/usr/local/opt/php@7.4/bin:$GOPATH/bin:$PATH"
 export PATH="/Users/alagodich/Library/Python/3.10/bin:$PATH"
+export PATH="/Users/alagodich/.poetry/bin:$PATH"
 typeset -U PATH
 
 

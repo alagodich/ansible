@@ -3,6 +3,23 @@
   connection: local
 
   tasks:
+    - name: install essentials
+      package:
+        name:
+          - htop
+          - vim
+          - tmux
+          - pass
+          - zsh
+
+    - name: zsh config
+      copy:
+        src: files/.zshrc
+        dest: /Users/alagodich/test.zshrc
+        owner: alagodich
+        group: staff
+        mode: 0644
+
     - name: myzsh config
       copy:
         src: files/my.zsh
