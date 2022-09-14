@@ -3,12 +3,20 @@
   connection: local
 
   tasks:
-    - name: install essentials
-      become: false
-      community.general.homebrew:
-        update_homebrew: true
-        name: htop
-        state: present
+#    - name: install essentials
+#      become: false
+#      community.general.homebrew:
+#        update_homebrew: true
+#        name: htop
+#        state: present
+
+    - name: "brew favourites"
+      homebrew: name={{ item }} state=present
+      with_items:
+        - htop
+#        - nmap
+#        - telnet
+#        - wget
 
     - name: zsh config
       copy:
