@@ -11,7 +11,6 @@ export ZSH="/Users/alagodich/.oh-my-zsh"
 # cp typewritten.zsh files/zsh_custom/themes/typewritten.zsh-theme
 # cp async.zsh files/zsh_custom/themes/async.zsh
 ZSH_THEME="typewritten"
-export TYPEWRITTEN_COLOR_MAPPINGS="primary:red;secondary:red;accent:black;foreground:black"
 
 # To try others
 # ZSH_THEME="random"
