@@ -22,7 +22,7 @@
     - name: zsh config
       copy:
         src: files/.zshrc
-        dest: /Users/alagodich/test.zshrc
+        dest: /Users/alagodich/.zshrc
         owner: alagodich
         group: staff
         mode: 0644
