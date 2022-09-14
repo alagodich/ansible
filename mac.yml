@@ -34,3 +34,12 @@
         owner: alagodich
         group: staff
         mode: 0644
+
+    - name: vim config
+      copy:
+        src: files/vim
+        dest: /Users/alagodich/.vim/
+        owner: alagodich
+        group: staff
+        mode: 0644
+
