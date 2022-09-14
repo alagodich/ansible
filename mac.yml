@@ -4,13 +4,10 @@
 
   tasks:
     - name: install essentials
-      package:
-        name:
-          - htop
-          - vim
-          - tmux
-          - pass
-          - zsh
+      community.general.homebrew:
+        update_homebrew: true
+        name: htop
+        state: present
 
     - name: zsh config
       copy:
