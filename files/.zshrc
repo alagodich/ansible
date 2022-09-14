@@ -9,7 +9,7 @@ export ZSH="/Users/alagodich/.oh-my-zsh"
 # Steps with oh-my-zsh:
 # Git clone somewhere, then from root:
 # cp typewritten.zsh files/zsh_custom/themes/typewritten.zsh-theme
-# cp async.zsh files/zsh_custom/themes/async
+# cp async.zsh files/zsh_custom/themes/async.zsh
 ZSH_THEME="typewritten"
 
 # To try others
