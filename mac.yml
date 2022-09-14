@@ -1,22 +1,23 @@
 ---
 - hosts: localhost
   connection: local
+  become: true
 
   tasks:
+# It is not trivial to install stuff on mac with homebrew
+# TODO figure out later, here are some references:
+# https://github.com/geerlingguy/mac-dev-playbook
+# https://github.com/geerlingguy/ansible-collection-mac
 #    - name: install essentials
-#      become: false
 #      community.general.homebrew:
 #        update_homebrew: true
 #        name: htop
 #        state: present
-
-    - name: "brew favourites"
-      homebrew: name={{ item }} state=present
-      with_items:
-        - htop
-#        - nmap
-#        - telnet
-#        - wget
+#    - name: install essentials
+#      package:
+#        name:
+#          - htop
+#          - zsh
 
     - name: zsh config
       copy:
