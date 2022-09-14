@@ -1,8 +1,5 @@
 ## Ansible local workstation plan
 
-
-
-
 # Ubuntu initial pre-ansible setup
 Full install for drivers
    
@@ -18,9 +15,14 @@ cat ~/.gitconfig
 mkdir development
 cd development
 
-# add keys
+# Add keys
 git clone git@github.com:alagodich/ansible.git
 cd ansible
 sudo apt-get install ansible
 make up-ubuntu
+
+# TODO 
+https://github.com/geerlingguy/ansible-collection-mac
+
+https://github.com/geerlingguy/mac-dev-playbook
 
