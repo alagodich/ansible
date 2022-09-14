@@ -19,18 +19,18 @@
 #          - htop
 #          - zsh
 
-    - name: zsh config
+    - name: zsh dirs
       copy:
-        src: files/.zshrc
-        dest: /Users/alagodich/.zshrc
+        src: files/zsh_custom/
+        dest: /Users/alagodich/.oh-my-zsh/custom/
         owner: alagodich
         group: staff
         mode: 0644
 
-    - name: myzsh config
+    - name: zsh config
       copy:
-        src: files/my.zsh
-        dest: /Users/alagodich/.oh-my-zsh/custom/my.zsh
+        src: files/.zshrc
+        dest: /Users/alagodich/.zshrc
         owner: alagodich
         group: staff
         mode: 0644
