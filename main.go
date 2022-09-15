@@ -19,4 +19,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	err = actions.UpdateITerm2Colors()
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
