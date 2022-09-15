@@ -33,13 +33,6 @@
         - pass
         - zsh
 
-  - name: bashrc
-    copy:
-      src: files/.bashrc
-      dest: /home/alagodich/.bashrc
-      owner: alagodich
-      group: alagodich
-
   - name: activate zsh
     shell: chsh -s $(which zsh)
     become: false

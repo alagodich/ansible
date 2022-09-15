@@ -8,8 +8,12 @@ up-mac:
 up-ubuntu:
 	@sudo ansible-pull -U https://github.com/alagodich/ansible.git ubuntu.yml
 
-
 .PHONY: dump-dconf
-## Dump dconf to view
+## Dump dconf to view, Ubuntu only
 dump-dconf:
 	@dconf dump / | view -
+
+.PHONY: lib-update
+## Run updater
+lib-update:
+	@go run main.go
