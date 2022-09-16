@@ -34,7 +34,8 @@
         - zsh
 
   - name: activate zsh
-    shell: chsh alagodich -s $(which zsh)
+#    shell: chsh alagodich -s $(which zsh)
+    shell: usermod -s $(which shell) alagodich
     #- name: dconf
     #dconf:
     #key: "some/key"
