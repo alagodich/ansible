@@ -34,8 +34,7 @@
         - zsh
 
   - name: activate zsh
-    shell: chsh -s $(which zsh)
-    become_user: alagodich
+    shell: chsh alagodich -s $(which zsh)
     #- name: dconf
     #dconf:
     #key: "some/key"
