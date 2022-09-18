@@ -53,4 +53,6 @@
 
     - name: enable press and hold
       command: defaults write -g ApplePressAndHoldEnabled -bool false
+      become_user: alagodich
+
 
