@@ -52,5 +52,5 @@
         mode: 0644
 
     - name: enable press and hold
-      shell: defaults write -g ApplePressAndHoldEnabled -bool false
+      command: defaults write -g ApplePressAndHoldEnabled -bool false
 
