@@ -51,6 +51,7 @@
         group: staff
         mode: 0644
 
+    # This will allow holding keys for to repeat instead of bringing context menu for mac special characters
     - name: enable press and hold
       command: defaults write -g ApplePressAndHoldEnabled -bool false
       become_user: alagodich
