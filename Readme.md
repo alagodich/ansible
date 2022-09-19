@@ -13,4 +13,6 @@ https://github.com/geerlingguy/ansible-collection-mac
 
 https://github.com/geerlingguy/mac-dev-playbook
 
-https://github.com/junegunn/fzf
+https://github.com/neoclide/coc.nvim
+
+https://github.com/dense-analysis/ale
