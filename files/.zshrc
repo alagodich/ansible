@@ -54,3 +54,4 @@ autoload -U +X bashcompinit && bashcompinit
 # Kubernetes autocomplete
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
