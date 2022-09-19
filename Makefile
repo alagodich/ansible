@@ -17,3 +17,8 @@ dump-dconf:
 ## Run updater
 lib-update:
 	@go run main.go
+
+.PHONY: install-packages
+## Install third party packages
+install-packages:
+	@go run install.go

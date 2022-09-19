@@ -53,6 +53,15 @@ set laststatus=2
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
+" Fuzzy completion for functions, variables etc, but not for files and dirs
+set wildoptions+=fuzzy
+
 " Plugins
-call plug#begin('~/.vim/plugged')
+" Vim commands:
+" :PlugInstall (still need to install them all manually)
+" :PlugUpdate update all plugins
+" :PlugUpgrade Upgrade vim-plug itself - not necessary, it is updated with ansible
+call plug#begin()
+    Plug 'preservim/nerdtree'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
