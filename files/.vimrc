@@ -33,15 +33,17 @@ set undofile
 set nohlsearch          " Do not highlight search
 set incsearch           " Incremental search highlight
 
+set updatetime=100
+
 syntax on
 filetype plugin indent on
 
 " Light line status bar
 set laststatus=2
 
-" Cange cursor to line in insert mode
+" Change cursor to line in insert mode
 " Ps = 0 - blinking block
-" Ps = 1 - blinging block (default)
+" Ps = 1 - blinking block (default)
 " Ps = 2 - steady block
 " Ps = 3 - blinking underline
 " Ps = 4 - steady underline
@@ -64,4 +66,16 @@ set wildoptions+=fuzzy
 call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'vim-airline/vim-airline'
 call plug#end()
+
+" Remaps
+" Start fzf with Ctrl-p
+nnoremap <silent> <C-p> :FZF<CR>
+
+" TODO add some commands with mapleader
+" let mapleader = " "
+" nnoremap <leader>ps :some_comand
