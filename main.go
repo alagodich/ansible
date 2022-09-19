@@ -23,4 +23,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	err = actions.UpdateVimPlug()
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
