@@ -15,10 +15,10 @@
 #        state: present
 
     - name: install essentials
-      ansible_user: alagodich
+      become_user: alagodich
       become: false
       vars:
-        become_user: alagodich
+        ansible_user: alagodich
       package:
         name:
           - htop
