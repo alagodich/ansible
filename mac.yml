@@ -4,16 +4,6 @@
   become: true
 
   tasks:
-# It is not trivial to install stuff on mac with homebrew
-# TODO figure out later, here are some references:
-# https://github.com/geerlingguy/mac-dev-playbook
-# https://github.com/geerlingguy/ansible-collection-mac
-#    - name: install essentials
-#      community.general.homebrew:
-#        update_homebrew: true
-#        name: htop
-#        state: present
-
     - name: install essentials
       become_user: alagodich
       become: true
@@ -23,6 +13,8 @@
         name:
           - htop
           - zsh
+          - tmux
+          - vim
 
     - name: zsh dirs
       copy:

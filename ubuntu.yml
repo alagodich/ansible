@@ -30,7 +30,6 @@
         - htop
         - vim
         - tmux
-        - pass
         - zsh
 
   - name: activate zsh
