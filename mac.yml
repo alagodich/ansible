@@ -13,10 +13,12 @@
 #        update_homebrew: true
 #        name: htop
 #        state: present
+
     - name: install essentials
       ansible_user: alagodich
       become: false
-      become_user: alagodich
+      vars:
+        become_user: alagodich
       package:
         name:
           - htop
