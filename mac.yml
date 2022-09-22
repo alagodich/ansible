@@ -15,6 +15,7 @@
           - zsh
           - tmux
           - vim
+          - ripgrep
 
     - name: zsh dirs
       copy:

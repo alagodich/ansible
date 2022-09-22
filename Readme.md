@@ -16,3 +16,5 @@ https://github.com/geerlingguy/mac-dev-playbook
 https://github.com/neoclide/coc.nvim
 
 https://github.com/dense-analysis/ale
+
+https://github.com/sharkdp/bat
