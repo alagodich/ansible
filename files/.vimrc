@@ -14,7 +14,7 @@ set number              " show line numbers
 set relativenumber      " relative line numbers
 set nu                  " show line current number normally (usually default)
 set hidden              " don't unload a buffer when no longer shown in a window 
-set noerrorbells        " No sound
+set noerrorbells        " no sound
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu            " visual autocomplete for command menu
@@ -22,6 +22,8 @@ set showmatch           " highlight matching [{()}]
 set smartcase           " override 'ignorecase' when pattern has upper case characters
 set scrolloff=8         " number of screen lines to show around the cursor 
 set signcolumn=yes      " one more column on the left for git or lint stuff
+set spell               " spell check
+set spelllang=en_us
 
 " History
 set noswapfile
@@ -30,8 +32,8 @@ set undodir=~/.vim/undodir
 set undofile
 
 " Search
-set nohlsearch          " Do not highlight search
-set incsearch           " Incremental search highlight
+set nohlsearch          " do not highlight search
+set incsearch           " incremental search highlight
 
 set updatetime=100
 
@@ -79,3 +81,7 @@ nnoremap <silent> <C-p> :FZF<CR>
 " TODO add some commands with mapleader
 " let mapleader = " "
 " nnoremap <leader>ps :some_comand
+
+let NERDTreeShowHidden=1
+
+
