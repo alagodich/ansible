@@ -12,6 +12,7 @@ import (
 func InstallFzf() error {
 	log.Println(strings.Repeat("~", 50))
 	log.Println("Installing fzf...")
+
 	path := "tmp/fzf"
 	err := CloneRepo("https://github.com/junegunn/fzf.git", path)
 	if err != nil {

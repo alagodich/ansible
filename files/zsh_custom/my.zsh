@@ -22,6 +22,10 @@ export PATH="/Users/alagodich/Library/Python/3.10/bin:$PATH"
 export PATH="/Users/alagodich/.poetry/bin:$PATH"
 typeset -U PATH
 
+# FZF
+export FZF_DEFAULT_COMMAND='find .'
+export FZF_DEFAULT_OPTS='--layout=reverse --border'
+alias fzv='vim $(fzf)'
 
 # Enable kubernetes autocomplete
 # [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)

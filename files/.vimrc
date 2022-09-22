@@ -72,16 +72,14 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
     Plug 'vim-airline/vim-airline'
+    Plug 'dense-analysis/ale'
 call plug#end()
 
 " Remaps
 " Start fzf with Ctrl-p
 nnoremap <silent> <C-p> :FZF<CR>
+nnoremap <silent> <C-t> :NERDTreeToggle<CR>
 
-" TODO add some commands with mapleader
-" let mapleader = " "
-" nnoremap <leader>ps :some_comand
-
+" Nerd tree settings
 let NERDTreeShowHidden=1
-
 

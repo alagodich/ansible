@@ -1,3 +1,6 @@
+# Enable fzf, it will be also done automatically when installing fzf with git
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alagodich/.oh-my-zsh"
 
@@ -54,5 +57,3 @@ autoload -U +X bashcompinit && bashcompinit
 # Kubernetes autocomplete
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-# Enable fzf, it will be also done automatically when installing fzf with git
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
