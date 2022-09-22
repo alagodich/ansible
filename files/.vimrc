@@ -28,6 +28,7 @@ set spelllang=en_us
 " History
 set noswapfile
 set nobackup
+set nowritebackup        " for coc plugin, some servers can have issues with backup
 set undodir=~/.vim/undodir
 set undofile
 
