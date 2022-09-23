@@ -16,7 +16,6 @@
           - tmux
           - vim
           - ripgrep
-          - pulumi
 
     - name: zsh dirs
       copy:
