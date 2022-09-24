@@ -10,9 +10,7 @@ alias dockerps="docker ps --format '{{.Names}}: {{.Ports}}'"
 dev=/Volumes/case-sensitive/development/
 nl=/Volumes/case-sensitive/development/northern-light/
 
-# Variables
-export KUBECONFIG_PATH=/Volumes/case-sensitive/development/kubernetes/cluster-config
-export KUBECONFIG=~/.kube/config:$KUBECONFIG_PATH/dev.yaml:$KUBECONFIG_PATH/rancher-infra.yaml:$KUBECONFIG_PATH/production-cloud-2.yaml:$KUBECONFIG_PATH/sp-trf-eks.yaml
+# Aws
 export AWS_PROFILE=AdministratorAccess-382429600368
 
 # Paths
@@ -20,6 +18,15 @@ export GOPATH=/Users/alagodich/go
 export PATH="/usr/local/opt/php@7.4/bin:$GOPATH/bin:$PATH"
 export PATH="/Users/alagodich/Library/Python/3.10/bin:$PATH"
 export PATH="/Users/alagodich/.poetry/bin:$PATH"
+
+# Kubernets 
+export KUBECONFIG_PATH=/Volumes/case-sensitive/development/kubernetes/cluster-config
+export KUBECONFIG=~/.kube/config
+export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/dev.yaml"
+export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/rancher-infra.yaml"
+export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/production-cloud-2.yaml"
+export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/us-east-1-spdev-eks.yaml"
+
 typeset -U PATH
 
 # FZF
@@ -28,8 +35,5 @@ export FZF_DEFAULT_OPTS='--layout=reverse --border'
 alias fzv='vim $(fzf)'
 
 # Enable kubernetes autocomplete
-# [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
-#source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-#PS1='$(kube_ps1)'$PS1
-#PROMPT='$(kube_ps1)'$PROMPT

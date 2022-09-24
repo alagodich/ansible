@@ -44,6 +44,7 @@ tw_prompt="$tw_prompt_color$tw_return_code$tw_prompt_symbol %F{$tw_colors[prompt
 
 tw_current_directory_color="$tw_colors[current_directory]"
 tw_git_branch_color="$tw_colors[git_branch]"
+tw_k8s_context_color="$tw_colors[host]"
 
 local tw_arrow_symbol="->"
 if [ ! -z "$TYPEWRITTEN_ARROW_SYMBOL" ]; then
@@ -100,7 +101,7 @@ tw_redraw() {
 
   tw_layout="$TYPEWRITTEN_PROMPT_LAYOUT"
   tw_git_info="$tw_prompt_data[tw_git_branch]$tw_prompt_data[tw_git_status]"
-  tw_k8s_info=" $tw_prompt_data[tw_kube_context]"
+  tw_k8s_info=" %F{$tw_k8s_context_color}$tw_prompt_data[tw_kube_context]"
   if [ "$tw_layout" = "half_pure" ]; then
     PROMPT="$BREAK_LINE%F{$tw_git_branch_color}$tw_git_info$BREAK_LINE$tw_env_prompt"
     RPROMPT="$tw_right_prompt_prefix$tw_displayed_wd"

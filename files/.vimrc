@@ -37,6 +37,7 @@ set nohlsearch          " do not highlight search
 set incsearch           " incremental search highlight
 
 set updatetime=100
+set backspace=indent,eol,start
 
 syntax on
 filetype plugin indent on
