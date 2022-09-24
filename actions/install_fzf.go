@@ -9,6 +9,8 @@ import (
 
 // InstallFzf
 // Git clone to the local tmp dir and run install
+// @deprecated
+// It better be installed with brew
 func InstallFzf() error {
 	log.Println(strings.Repeat("~", 50))
 	log.Println("Installing fzf...")

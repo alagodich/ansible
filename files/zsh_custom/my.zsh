@@ -19,7 +19,7 @@ export PATH="/usr/local/opt/php@7.4/bin:$GOPATH/bin:$PATH"
 export PATH="/Users/alagodich/Library/Python/3.10/bin:$PATH"
 export PATH="/Users/alagodich/.poetry/bin:$PATH"
 
-# Kubernets 
+# Kubernetes
 export KUBECONFIG_PATH=/Volumes/case-sensitive/development/kubernetes/cluster-config
 export KUBECONFIG=~/.kube/config
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/dev.yaml"
@@ -35,5 +35,4 @@ export FZF_DEFAULT_OPTS='--layout=reverse --border'
 alias fzv='vim $(fzf)'
 
 # Enable kubernetes autocomplete
-[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
-
+source <(kubectl completion zsh)
