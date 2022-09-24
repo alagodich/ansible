@@ -16,6 +16,7 @@
           - tmux
           - vim
           - ripgrep
+          - fzf
 
     - name: zsh dirs
       copy:
