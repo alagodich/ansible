@@ -87,4 +87,15 @@
         owner: alagodich
         group: staff
         mode: 0644
-      
+
+      # ~/Library/Preferences/com.googlecode.iterm2.plist - is a binary, just copying xml will not work
+      # Need to convert
+#    - name: iterm2 config
+#      tags:
+#        - iterm2
+#      copy: files/iterm2/com.googlecode.iterm2.plist
+#      dest: /Users/alagodich/Library/Preferences/com.googlecode.iterm2.plist
+#      owner: alagodich
+#      group: staff
+#      mode: 0644
+
