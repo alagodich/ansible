@@ -20,6 +20,7 @@
           - ripgrep
           - fzf
           - neovim
+          - neofetch
 
     - name: zsh dirs
       tags:
