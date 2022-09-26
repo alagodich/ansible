@@ -3,6 +3,11 @@
 up-mac:
 	@sudo ansible-pull -U https://github.com/alagodich/ansible.git mac.yml
 
+.PHONY: up-mac-local
+## Provision mac locally
+up-mac-local:
+	@sudo ansible-playbook mac.yml --ask-become-pass
+
 .PHONY: up-ubuntu
 ## Apply playbook
 up-ubuntu:
@@ -17,8 +22,3 @@ dump-dconf:
 ## Run updater
 lib-update:
 	@go run main.go
-
-.PHONY: install-packages
-## Install third party packages
-install-packages:
-	@go run install.go

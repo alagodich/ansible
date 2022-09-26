@@ -18,3 +18,5 @@ https://github.com/neoclide/coc.nvim
 https://github.com/dense-analysis/ale
 
 https://github.com/sharkdp/bat
+
+https://github.com/nanotee/nvim-lua-guide

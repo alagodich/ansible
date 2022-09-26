@@ -18,6 +18,13 @@ func UpdateVimPlug() error {
 		"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim",
 	)
 	err := cmd.Run()
+	cmd = exec.Command(
+		"curl",
+		"-o",
+		"files/nvim_local_share/site/autoload/plug.vim",
+		"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim",
+	)
+	err = cmd.Run()
 
 	log.Println("  Done")
 	return err
