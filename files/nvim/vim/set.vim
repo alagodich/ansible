@@ -29,7 +29,7 @@ set spelllang=en_us
 set noswapfile
 set nobackup
 set nowritebackup        " for coc plugin, some servers can have issues with backup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 
 " Search

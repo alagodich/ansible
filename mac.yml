@@ -4,7 +4,18 @@
   become: true
 
   tasks:
-    - name: install essentials
+    - name: third party taps
+      become_user: alagodich
+      become: true
+      vars:
+        ansible_user: true
+      community.general.homebrew_tap:
+        name: 
+          - heroku/brew
+      tags:
+        - heroku
+
+    - name: install packages
       become_user: alagodich
       become: true
       tags:
@@ -21,6 +32,9 @@
           - fzf
           - neovim
           - neofetch
+          - heroku
+        # brave!
+        state: latest
 
     - name: zsh dirs
       tags:
