@@ -3,7 +3,8 @@ let mapleader = " "
 
 " Remaps
 " Start fzf with Ctrl-p
-nnoremap <silent> <C-p> :Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=<CR>
+"nnoremap <silent> <C-p> :Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=<CR>
+nnoremap <silent> <C-p> :Telescope find_files<CR>
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
 
 " Nerd tree settings
