@@ -1,5 +1,6 @@
 # Aliases
 alias k8s="kubectl"
+alias kx="kubectx"
 alias redis="docker run --rm -i -p 6379:6379 redis:6.2.4"
 alias selenium-chrome="docker run -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.0.0-rc-2-prerelease-20210906"
 alias myzsh="vim $ZSH_CUSTOM/my.zsh"
