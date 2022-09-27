@@ -20,3 +20,6 @@ https://github.com/dense-analysis/ale
 https://github.com/sharkdp/bat
 
 https://github.com/nanotee/nvim-lua-guide
+
+
+Install and keep up-to-date go global packages staticcheck, revive, vet
