@@ -33,6 +33,7 @@
           - neovim
           - neofetch
           - heroku
+          - pulumi
         # brave!
         state: latest
 

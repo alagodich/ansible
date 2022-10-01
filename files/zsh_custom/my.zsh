@@ -1,4 +1,5 @@
 # Aliases
+alias vim="nvim"
 alias k8s="kubectl"
 alias kx="kubectx"
 alias redis="docker run --rm -i -p 6379:6379 redis:6.2.4"
