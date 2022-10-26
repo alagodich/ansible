@@ -104,6 +104,14 @@
         group: staff
         mode: 0644
 
+    # https://superuser.com/questions/1749364/git-ssh-permission-denied-in-macos-13-ventura
+    - name: ssh config
+      tags:
+        - config
+      copy:
+        src: files/ssh/config
+        dest: /Users/alagodich/.ssh/config
+
       # ~/Library/Preferences/com.googlecode.iterm2.plist - is a binary, just copying xml will not work
       # Need to convert
 #    - name: iterm2 config
