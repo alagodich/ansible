@@ -1,0 +1,2 @@
+### GKE
+To make kubeconfig, run `KUBECONFIG=/Volumes/case-sensitive/development/kubernetes/cluster-config/signup-gke.yaml gcloud container clusters get-credentials autopilot-cluster-1 --region us-central1 --project optimal-design-375118`
