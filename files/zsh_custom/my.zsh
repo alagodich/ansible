@@ -13,7 +13,7 @@ dev=/Volumes/case-sensitive/development/
 nl=/Volumes/case-sensitive/development/northern-light/
 
 # Aws
-export AWS_PROFILE=AdministratorAccess-382429600368
+export AWS_PROFILE=AdministratorAccess-eks
 
 # Paths
 export GOPATH=/Users/alagodich/go
