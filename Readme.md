@@ -23,3 +23,6 @@ https://github.com/nanotee/nvim-lua-guide
 
 
 Install and keep up-to-date go global packages staticcheck, revive, vet, gofmt
+
+## zsh-autosuggestions installation
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
