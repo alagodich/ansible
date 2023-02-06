@@ -9,8 +9,8 @@ alias zshrc="vim ~/.zshrc"
 alias dockerps="docker ps --format '{{.Names}}: {{.Ports}}'"
 
 # Directories
-dev=/Volumes/case-sensitive/development/
-nl=/Volumes/case-sensitive/development/northern-light/
+dev=/Volumes/development/
+nl=/Volumes/development/northern-light/
 
 # Aws
 export AWS_PROFILE=AdministratorAccess-eks
@@ -22,7 +22,7 @@ export PATH="/Users/alagodich/Library/Python/3.10/bin:$PATH"
 export PATH="/Users/alagodich/.poetry/bin:$PATH"
 
 # Kubernetes
-export KUBECONFIG_PATH=/Volumes/case-sensitive/development/kubernetes/cluster-config
+export KUBECONFIG_PATH=/Volumes/development/kubernetes/cluster-config
 export KUBECONFIG=~/.kube/config
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/dev.yaml"
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/rancher-infra.yaml"

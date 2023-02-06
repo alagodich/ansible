@@ -1,0 +1,114 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+    - name: install packages
+      become_user: alagodich
+      become: true
+      tags:
+        - packages
+      vars:
+        ansible_user: alagodich
+      package:
+        name:
+          - htop
+          - zsh
+          - tmux
+          - vim
+          - ripgrep
+          - fzf
+          - neovim
+          - neofetch
+          - heroku
+          - pulumi
+        # brave!
+        state: latest
+
+    - name: zsh dirs
+      tags:
+        - zsh
+      copy:
+        src: files/zsh_custom/
+        dest: /Users/alagodich/.oh-my-zsh/custom/
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    - name: zsh config
+      tags:
+        - zsh
+      copy:
+        src: files/.zshrc
+        dest: /Users/alagodich/.zshrc
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    - name: vimrc
+      tags:
+        - vim
+      copy:
+        src: files/.vimrc
+        dest: /Users/alagodich/.vimrc
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    - name: vim config
+      tags:
+        - vim
+      copy:
+        src: files/vim/
+        dest: /Users/alagodich/.vim/
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    # This will allow holding keys for to repeat instead of bringing context menu for mac special characters
+    - name: enable press and hold
+      tags:
+        - config
+      command: defaults write -g ApplePressAndHoldEnabled -bool false
+      become_user: alagodich
+
+    - name: neovim config
+      tags:
+        - neovim
+      copy:
+        src: files/nvim/
+        dest: /Users/alagodich/.config/nvim/
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    - name: neovim local share
+      tags:
+        - neovim
+      copy:
+        src: files/nvim_local_share/
+        dest: /Users/alagodich/.local/share/nvim/
+        owner: alagodich
+        group: staff
+        mode: 0644
+
+    # https://superuser.com/questions/1749364/git-ssh-permission-denied-in-macos-13-ventura
+    - name: ssh config
+      tags:
+        - config
+      copy:
+        src: files/ssh/config
+        dest: /Users/alagodich/.ssh/config
+
+      # ~/Library/Preferences/com.googlecode.iterm2.plist - is a binary, just copying xml will not work
+      # Need to convert
+#    - name: iterm2 config
+#      tags:
+#        - iterm2
+#      copy: files/iterm2/com.googlecode.iterm2.plist
+#      dest: /Users/alagodich/Library/Preferences/com.googlecode.iterm2.plist
+#      owner: alagodich
+#      group: staff
+#      mode: 0644
+

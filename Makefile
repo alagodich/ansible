@@ -1,3 +1,8 @@
+.PHONY: up-mac-2023
+## Apply 2023 mac playbook
+up-mac-2023:
+	@sudo /Users/alagodich/Library/Python/3.11/bin/ansible-pull -U https://github.com/alagodich/ansible.git mac.yml
+
 .PHONY: up-mac
 ## Apply mac playbook
 up-mac:
