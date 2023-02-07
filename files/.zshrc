@@ -1,6 +1,10 @@
 # Enable fzf, it will be also done automatically when installing fzf with git
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Brew completions
+# https://docs.brew.sh/Shell-Completion
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alagodich/.oh-my-zsh"
 
