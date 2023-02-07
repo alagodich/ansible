@@ -34,6 +34,7 @@
           - neofetch
           - heroku
           - pulumi
+          - kubectx
         # brave!
         state: latest
 
