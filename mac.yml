@@ -38,6 +38,7 @@
           - pulumi
           - kubectx
           - hashicorp/tap/terraform
+          - jq
         # brave!
         state: latest
 
