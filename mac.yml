@@ -12,8 +12,10 @@
       community.general.homebrew_tap:
         name: 
           - heroku/brew
+          - hashicorp/tap
       tags:
         - heroku
+        - brew
 
     - name: install packages
       become_user: alagodich
@@ -35,6 +37,7 @@
           - heroku
           - pulumi
           - kubectx
+          - hashicorp/tap/terraform
         # brave!
         state: latest
 
