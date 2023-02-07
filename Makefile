@@ -1,7 +1,7 @@
 .PHONY: up-mac
 ## Apply mac playbook
 up-mac:
-	@sudo /Users/alagodich/Library/Python/3.11/bin/ansible-pull -U https://github.com/alagodich/ansible.git mac.yml
+	@sudo ansible-pull -U https://github.com/alagodich/ansible.git mac.yml
 
 .PHONY: up-mac-local
 ## Provision mac locally
