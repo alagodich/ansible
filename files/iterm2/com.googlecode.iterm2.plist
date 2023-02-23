@@ -2164,13 +2164,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55686277151107788</real>
+				<real>0.23017071256970612</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.46274510025978088</real>
+				<real>0.12415250949561596</real>
 				<key>Red Component</key>
-				<real>0.9686274528503418</real>
+				<real>0.694000244140625</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -2346,13 +2346,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55686277151107788</real>
+				<real>0.38353874642718733</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.46274510025978088</real>
+				<real>0.28360706008970737</real>
 				<key>Red Component</key>
-				<real>0.9686274528503418</real>
+				<real>0.82073974609375</real>
 			</dict>
 			<key>BM Growl</key>
 			<true/>
@@ -2958,7 +2958,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -3000,7 +3000,7 @@
 			<key>Transparency</key>
 			<real>0.021982279026761954</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
