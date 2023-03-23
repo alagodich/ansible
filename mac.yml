@@ -34,7 +34,6 @@
           - fzf
           - neovim
           - neofetch
-          - heroku
           - pulumi
           - kubectx
           - hashicorp/tap/terraform
