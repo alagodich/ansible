@@ -43,6 +43,7 @@
           - composer
           - helm
           - dive
+          - mysql-client
         # brave!
         state: latest
 
