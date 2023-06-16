@@ -52,7 +52,7 @@ local-mysql() {
 
 # Directories
 dev=~/development/
-nl=~/development/northern-light/
+nl=~/development/northernlight/
 
 # Aws
 export AWS_PROFILE=AdministratorAccess-eks
