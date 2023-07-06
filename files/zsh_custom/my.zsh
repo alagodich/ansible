@@ -45,6 +45,11 @@ local-logs-codeception() {
     kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/codeception-logs.sh -n $K8S_LOCAL_RELEASE_NAME
 }
 
+local-shell-codeception() {
+    ## local-logs-codeception: Stream local sp release codeception container logs
+    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/codeception-shell.sh -n $K8S_LOCAL_RELEASE_NAME
+}
+
 local-mysql() {
     ## local-mysql: Connect to local release mysql
     kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/mysql-shell.sh -n $K8S_LOCAL_RELEASE_NAME
