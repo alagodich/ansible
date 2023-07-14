@@ -8,6 +8,7 @@ alias chromedriver="/Users/alagodich/development/tools/chromedriver/chromedriver
 alias myzsh="vim $ZSH_CUSTOM/my.zsh"
 alias zshrc="vim ~/.zshrc"
 alias dockerps="docker ps --format '{{.Names}}: {{.Ports}}'"
+alias kill-evicted="kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod"
 
 # NL k8s commands
 export K8S_CONTEXT_LOCAL="docker-desktop"
