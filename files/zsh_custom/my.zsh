@@ -35,6 +35,7 @@ export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/Users/alagodich/Library/Python/3.11/bin:$PATH"
 export PATH="/Users/alagodich/.poetry/bin:$PATH"
+export PATH="/Users/alagodich/.istioctl/bin:$PATH"
 
 # Kubernetes
 export KUBECONFIG_PATH=~/development/kubernetes/cluster-config
