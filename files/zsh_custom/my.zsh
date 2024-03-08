@@ -13,43 +13,7 @@ alias kill-evicted="kubectl get pods | grep Evicted | awk '{print $1}' | xargs k
 # NL k8s commands
 export K8S_CONTEXT_LOCAL="docker-desktop"
 export K8S_LOCAL_RELEASE_NAME="sp"
-
-local-release() {
-    ## local-release: Delete local sp release and create it again
-    kubectx $K8S_CONTEXT_LOCAL && helm uninstall $K8S_LOCAL_RELEASE_NAME $^ 2>/dev/null ; true
-    sleep 2
-    helm upgrade --install $K8S_LOCAL_RELEASE_NAME docker/helm --values docker/helm/values.local.yaml
-}
-
-local-apply() {
-    ## local-apply: Apply local sp release changes
-    kubectx $K8S_CONTEXT_LOCAL && helm upgrade --install $K8S_LOCAL_RELEASE_NAME docker/helm --values docker/helm/values.local.yaml
-}
-
-local-shell() {
-    ## local-shell: Connect to the local sp release portal container
-    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/shell.sh -n $K8S_LOCAL_RELEASE_NAME
-}
-
-local-logs() {
-    ## local-logs: Stream local sp release portal container logs
-    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/logs.sh -n $K8S_LOCAL_RELEASE_NAME
-}
-
-local-logs-init() {
-    ## local-logs-init: Stream local sp release init container logs
-    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/logs.sh -n $K8S_LOCAL_RELEASE_NAME -c init
-}
-
-local-logs-codeception() {
-    ## local-logs-codeception: Stream local sp release codeception container logs
-    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/codeception-logs.sh -n $K8S_LOCAL_RELEASE_NAME
-}
-
-local-shell-codeception() {
-    ## local-logs-codeception: Stream local sp release codeception container logs
-    kubectx $K8S_CONTEXT_LOCAL && ./docker/partials/codeception-shell.sh -n $K8S_LOCAL_RELEASE_NAME
-}
+export HELM_RELEASE_NAME_LOCAL="sp"
 
 local-mysql() {
     ## local-mysql: Connect to local release mysql

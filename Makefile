@@ -1,7 +1,7 @@
 .PHONY: up-mac
 ## Apply mac playbook
 up-mac:
-	@sudo ansible-pull -U https://github.com/alagodich/ansible.git mac.yml
+	@sudo ansible-pull --verbose --url https://github.com/alagodich/ansible.git mac.yml
 
 .PHONY: up-mac-local
 ## Provision mac locally
@@ -11,7 +11,7 @@ up-mac-local:
 .PHONY: up-ubuntu
 ## Apply playbook
 up-ubuntu:
-	@sudo ansible-pull -U https://github.com/alagodich/ansible.git ubuntu.yml
+	@sudo ansible-pull --url https://github.com/alagodich/ansible.git ubuntu.yml
 
 .PHONY: dump-dconf
 ## Dump dconf to view, Ubuntu only
