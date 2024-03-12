@@ -44,6 +44,7 @@ export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/dev.yaml"
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/rancher-infra.yaml"
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/production-cloud-2.yaml"
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/us-east-1-spdev-eks.yaml"
+export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/us-east-1-spdev-staging-eks--staging.yaml"
 export KUBECONFIG="$KUBECONFIG:$KUBECONFIG_PATH/signup-gke.yaml"
 
 typeset -U PATH
