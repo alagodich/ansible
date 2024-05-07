@@ -29,8 +29,8 @@ export AWS_PROFILE=AdministratorAccess-eks
 
 # Paths
 export GOPATH=/Users/alagodich/go
-export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
-export PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/Users/alagodich/Library/Python/3.11/bin:$PATH"
