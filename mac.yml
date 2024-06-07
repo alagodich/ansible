@@ -41,6 +41,7 @@
           - tfk8s
           - hashicorp/tap/terraform
           - jq
+          - php@8.1
           - php@8.3
           - composer
           - helm
