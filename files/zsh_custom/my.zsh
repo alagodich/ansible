@@ -12,8 +12,6 @@ alias kill-evicted="kubectl get pods | grep Evicted | awk '{print $1}' | xargs k
 
 # NL k8s commands
 export K8S_CONTEXT_LOCAL="docker-desktop"
-export K8S_LOCAL_RELEASE_NAME="sp"
-export HELM_RELEASE_NAME_LOCAL="sp"
 
 local-mysql() {
     ## local-mysql: Connect to local release mysql
