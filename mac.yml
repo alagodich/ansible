@@ -47,6 +47,7 @@
           - helm
           - dive
           - mysql-client
+          - cyphernetes
         # brave!
         state: latest
 
